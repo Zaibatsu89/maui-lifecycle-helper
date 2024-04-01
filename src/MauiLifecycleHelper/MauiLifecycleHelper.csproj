@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageId>Zaibatsu89.MauiLifecycleHelper</PackageId>
+    <Title>MAUI Lifecycle Helper</Title>
+    <Authors>Rinse Cramer</Authors>
+    <Company>Zaibatsu89</Company>
+    <Description>Helps MAUI developers implement lifecycle triggers in Pages.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Zaibatsu89/maui-lifecycle-helper.git</RepositoryUrl>
+    <PackageTags>maui;lifecycle;pages</PackageTags>
+    <RootNamespace>Zaibatsu89.MauiLifecycleHelper</RootNamespace>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.14" />
+  </ItemGroup>
+
+</Project>

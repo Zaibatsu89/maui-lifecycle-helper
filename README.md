@@ -32,3 +32,6 @@ public MyPage : ContentPage, IPage
     }
 }
 ```
+
+## Changelog
+- Version 1.0.1: "Manager"
