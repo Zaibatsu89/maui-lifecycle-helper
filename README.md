@@ -17,7 +17,7 @@ public App : Application
 ```
 using Zaibatsu89.MauiLifecycleHelper;
 
-public MyPage : ContentPage, IPage
+public MyPage : ContentPage, IPageActivated, IPageDeactivated
 {
     public OnActivated()
     {
@@ -34,5 +34,6 @@ public MyPage : ContentPage, IPage
 ```
 
 ## Changelog
+- Version 1.0.3: "IPageActivated, IPageDeactivated, ..."
 - Version 1.0.2: "Setup"
 - Version 1.0.1: "Manager"
