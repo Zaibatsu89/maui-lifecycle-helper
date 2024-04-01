@@ -1,5 +1,5 @@
 # MAUI lifecycle helper
-Helps MAUI developers implement lifecycle triggers in Pages of NavigationPage.
+Helps MAUI developers implement lifecycle triggers in Pages of Shell, NavigationPage or TabbedPage.
 
 ## Setup
 ```
@@ -8,7 +8,7 @@ public App : Application
     protected override Window CreateWindow(IActivationState activationState)
     {
         Window window = base.CreateWindow(activationState);
-        return Zaibatsu89.MauiLifecycleHelper.Manager.Init(window, (NavigationPage)MainPage);
+        return Zaibatsu89.MauiLifecycleHelper.Manager.Init(window, MainPage);
     }
 }
 ```
@@ -34,7 +34,4 @@ public MyPage : ContentPage, IPageActivated, IPageDeactivated
 ```
 
 ## Changelog
-- Version 1.0.4: "Bug: functions were never called"
-- Version 1.0.3: "IPageActivated, IPageDeactivated, ..."
-- Version 1.0.2: "Setup"
-- Version 1.0.1: "Manager"
+- Version 1.0.0
