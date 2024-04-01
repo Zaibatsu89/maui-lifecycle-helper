@@ -1,5 +1,5 @@
 # MAUI lifecycle helper
-Helps MAUI developers implement lifecycle triggers in Pages.
+Helps MAUI developers implement lifecycle triggers in Pages of NavigationPage.
 
 ## Setup
 ```
@@ -7,8 +7,8 @@ public App : Application
 {
     protected override Window CreateWindow(IActivationState activationState)
     {
-        base.CreateWindow(activationState);
-        return Zaibatsu89.MauiLifecycleHelper.Init();
+        Window window = base.CreateWindow(activationState);
+        return Zaibatsu89.MauiLifecycleHelper.Manager.Init(window, (NavigationPage)MainPage);
     }
 }
 ```
@@ -34,4 +34,5 @@ public MyPage : ContentPage, IPage
 ```
 
 ## Changelog
+- Version 1.0.2: "Setup"
 - Version 1.0.1: "Manager"
