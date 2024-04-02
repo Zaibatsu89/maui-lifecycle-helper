@@ -19,13 +19,13 @@ using Zaibatsu89.MauiLifecycleHelper;
 
 public MyPage : ContentPage, IPageActivated, IPageDeactivated
 {
-    public OnActivated()
+    public void OnActivated()
     {
         // the app is activated
         // after being deactivated
     }
 
-    public OnDeactivated()
+    public void OnDeactivated()
     {
         // the app is deactivated
         // after being activated
