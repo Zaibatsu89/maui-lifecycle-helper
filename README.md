@@ -34,4 +34,6 @@ public MyPage : ContentPage, IPageActivated, IPageDeactivated
 ```
 
 ## Changelog
+- Version 1.0.1
+    - Updated "Microsoft.Maui.Controls"
 - Version 1.0.0
